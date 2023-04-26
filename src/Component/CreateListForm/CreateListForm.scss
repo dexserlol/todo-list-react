@@ -1,0 +1,36 @@
+.list {
+    // .list__form
+    &__form {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    // .list__input
+    &__input {
+        width: 60%;
+        padding: 10px 0 10px 20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 18px;
+        &::placeholder {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    // .list__btn
+    &__btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #6096ec;
+        border: 0px;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            background: darken($color: #6096ec, $amount: 20);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.section {
+    // .section__list
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+.list {
+    box-sizing: content-box;
+    max-width: 500px;
+    min-height: 500px;
+    background: #eeeeee;
+    border-radius: 15px;
+    padding: 20px;
+    // .list__item
+    &__item {
+        width: 100%;
+        &:last-child {
+            height: 422px;
+            overflow-y: auto;
+        }
+    }
+    // .list__title
+    &__title {
+        margin-left: 15px;
+        display: inline;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__arrow {
+        margin-bottom: 10px;
+        width: 55px;
+        height: 55px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 25px;
+        background: #6096ec;
+        border: 0px;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            background: darken($color: #6096ec, $amount: 20);
+        }
+    }
+}
+.list__item::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* scrollbar itself */
+.list__item::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.list__item::-webkit-scrollbar-button {
+    display: none;
+}

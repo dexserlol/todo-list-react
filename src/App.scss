@@ -1,0 +1,65 @@
+.section {
+    // .section__home
+    &__home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+.home {
+    box-sizing: content-box;
+    max-width: 500px;
+    background: #eeeeee;
+    border-radius: 15px;
+    padding: 20px;
+    // .home__item
+    &__item {
+        width: 100%;
+        &:last-child {
+            height: 450px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__btn {
+        max-width: 150px;
+        margin-top: auto;
+        margin-left: auto;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #ec6060;
+        border: 0px;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            background: darken($color: #ec6060, $amount: 20);
+        }
+    }
+}
+.hero {
+    // .hero__title
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+.home__item::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* scrollbar itself */
+.home__item::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.home__item::-webkit-scrollbar-button {
+    display: none;
+}

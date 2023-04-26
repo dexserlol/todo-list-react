@@ -1,0 +1,62 @@
+.todo {
+    // .todo__item
+    &__item {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        row-gap: 20px;
+        &:hover {
+            & .todo__btn {
+                display: block;
+            }
+        }
+    }
+    // .todo__checkbox
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    // .todo__text
+    &__text {
+        font-size: 30px;
+        position: relative;
+        cursor: default;
+        &::after {
+            transition: 0.3s all;
+            position: absolute;
+            content: ' ';
+            display: block;
+            height: 2px;
+            width: 120%;
+            bottom: 0;
+            background: #00000062;
+        }
+        &.active {
+            color: #00000062;
+            &::after {
+                position: absolute;
+                bottom: 15px;
+            }
+        }
+    }
+    &__btn {
+        display: none;
+        margin-left: auto;
+        padding: 5px 5px 0 5px;
+        height: 100%;
+        border: 0;
+        cursor: pointer;
+        transition: 0.3s all;
+        border-radius: 50%;
+        &:hover {
+            display: block;
+            background: darken($color: #eeeeee, $amount: 40);
+            & path {
+                transition: 0.3s all;
+                fill: white;
+            }
+        }
+    }
+}

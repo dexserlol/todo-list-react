@@ -1,0 +1,16 @@
+.error {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // .error__title
+    &__title {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    // .error__text
+    &__text {
+        font-size: 20px;
+    }
+}

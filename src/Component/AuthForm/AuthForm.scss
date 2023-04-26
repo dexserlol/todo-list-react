@@ -1,0 +1,64 @@
+.section {
+    // .section__auth
+    &__auth {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.auth {
+    padding: 10px;
+    min-width: 350px;
+    background: #eeeeee;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // .form__username
+    &__username {
+        width: 100%;
+        padding: 20px;
+    }
+    // .form__title
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    // .form__input
+    &__input {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0 10px 20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 18px;
+        &::placeholder {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    // .form__password
+    &__password {
+        width: 100%;
+        padding: 20px;
+    }
+    &__btn {
+        margin-top: 20px;
+        min-width: 200px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #6096ec;
+        border: 0px;
+        color: white;
+        font-size: 25px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            background: darken($color: #6096ec, $amount: 20);
+        }
+    }
+}
