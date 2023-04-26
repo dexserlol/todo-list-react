@@ -17,8 +17,8 @@
     &__item {
         width: 100%;
         &:last-child {
-            height: 450px;
-            overflow-y: auto;
+            //height: 450px;
+            //overflow-y: auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -48,18 +48,4 @@
         font-size: 40px;
         font-weight: 700;
     }
-}
-.home__item::-webkit-scrollbar {
-    width: 8px;
-}
-
-/* scrollbar itself */
-.home__item::-webkit-scrollbar-thumb {
-    background-color: #babac0;
-    border-radius: 16px;
-}
-
-/* set button(top and bottom of the scrollbar) */
-.home__item::-webkit-scrollbar-button {
-    display: none;
 }

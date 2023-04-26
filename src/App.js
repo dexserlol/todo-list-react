@@ -5,7 +5,7 @@ import AuthForm from './Component/AuthForm/AuthForm'
 import CreateListForm from './Component/CreateListForm/CreateListForm'
 import Lists from './Component/Lists/Lists'
 import Toast from './Component/Toast/Toast'
-
+import Loader from './Component/Loader/Loader'
 export const userContext = React.createContext({})
 
 function App() {
@@ -31,7 +31,24 @@ function App() {
             })
     }, [auth])
     if (pending) {
-        return <div>loading...</div>
+        return (
+            <div
+                style={{
+                    width: '100vw',
+                    height: '100vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+                <div
+                    style={{
+                        width: '50vw',
+                        height: '50vw',
+                    }}>
+                    <Loader />
+                </div>
+            </div>
+        )
     } else if (!auth) {
         return (
             <>

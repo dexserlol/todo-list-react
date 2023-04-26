@@ -3,6 +3,7 @@ import {userContext} from '../../App'
 import Model from '../../Model/Model'
 import './Lists.scss'
 import {NavLink} from 'react-router-dom'
+import Loader from '../Loader/Loader'
 
 export default function Lists(props) {
     const [data, setData] = useState([])
@@ -33,8 +34,12 @@ export default function Lists(props) {
     }
     if (panding) {
         return (
-            <div class='lists'>
-                <h1>Loading...</h1>
+            <div
+                style={{
+                    height: 400,
+                    width: 400,
+                }}>
+                <Loader />
             </div>
         )
     }

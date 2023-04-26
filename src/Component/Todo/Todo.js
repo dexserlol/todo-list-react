@@ -2,6 +2,7 @@ import {useState, useEffect, useContext} from 'react'
 import {listContext} from '../List/List'
 import Model from '../../Model/Model'
 import {Navigate} from 'react-router-dom'
+import Loader from '../Loader/Loader'
 import './Todo.scss'
 
 export default function Todo(props) {
@@ -49,8 +50,12 @@ export default function Todo(props) {
     }, [value.addTodo])
     if (panding) {
         return (
-            <div class='todo'>
-                <h1>Loading...</h1>
+            <div
+                style={{
+                    height: 400,
+                    width: 400,
+                }}>
+                <Loader />
             </div>
         )
     }

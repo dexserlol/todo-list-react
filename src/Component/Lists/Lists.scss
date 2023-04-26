@@ -1,4 +1,6 @@
 .lists {
+    height: 400px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -53,4 +55,18 @@
             }
         }
     }
+}
+.lists::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* scrollbar itself */
+.lists::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.lists::-webkit-scrollbar-button {
+    display: none;
 }
