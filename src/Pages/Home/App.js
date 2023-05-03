@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import './App.scss'
-import Model from './Model/Model'
-import AuthForm from './Component/AuthForm/AuthForm'
-import CreateListForm from './Component/CreateListForm/CreateListForm'
-import Lists from './Component/Lists/Lists'
-import Toast from './Component/Toast/Toast'
-import Loader from './Component/Loader/Loader'
+import Model from '../../Model/Model'
+import AuthForm from '../../Component/AuthForm/AuthForm'
+import CreateListForm from '../../Component/CreateListForm/CreateListForm'
+import Lists from '../../Component/Lists/Lists'
+import Toast from '../../Component/Toast/Toast'
+import Loader from '../../Component/Loader/Loader'
 export const userContext = React.createContext({})
 
 function App() {

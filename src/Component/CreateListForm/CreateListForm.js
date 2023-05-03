@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react'
 import Model from '../../Model/Model'
 import './CreateListForm.scss'
-import {userContext} from '../../App'
+import {userContext} from '../../Pages/Home/App'
 export default function CreateListForm(props) {
     const [listName, setListName] = useState('')
     const [listCreate, setListCreate] = useState(false)

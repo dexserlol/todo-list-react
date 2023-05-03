@@ -1,11 +1,11 @@
 import React, {useContext, useState} from 'react'
 import {useLoaderData, useLocation, useNavigate} from 'react-router-dom'
 import Model from '../../Model/Model'
-import Error from '../Error/Error'
-import CreateTodoForm from '../CreateTodoForm/CreateTodoForm'
-import Todo from '../Todo/Todo'
+import Error from '../../Component/Error/Error'
+import CreateTodoForm from '../../Component/CreateTodoForm/CreateTodoForm'
+import Todo from '../../Component/Todo/Todo'
 import './List.scss'
-import Toast from '../Toast/Toast'
+import Toast from '../../Component/Toast/Toast'
 export const listContext = React.createContext({})
 
 export async function loader({params}) {

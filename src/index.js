@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './App'
+import App from './Pages/Home/App'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Error from './Component/Error/Error'
-import List, {loader as listLoader} from './Component/List/List'
+import List, {loader as listLoader} from './Pages/List/List'
 
 const router = createBrowserRouter([
     {
