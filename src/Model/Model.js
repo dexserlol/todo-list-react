@@ -1,5 +1,5 @@
 class Model {
-    url = 'https://todo-list-back-production.up.railway.app'
+    url = ''
 
     async getUser(token) {
         const response = await fetch(this.url + '/user/getUser', {
